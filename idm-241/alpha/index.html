@@ -1,61 +1,37 @@
 <!DOCTYPE html>
 <head>
-    <style>
-        body{
-            background-color: #1E2126;
-            color:#e2e2e2;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 32px;
-            font-weight: bold;
-        }
-        a{
-            font-size: 40px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color:#e2e2e2;
-        }
-        #interaction{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            
-            width: 400px;
-        }
-        #interaction:hover{
-            width:420px;
-            transition: .5s;
-            filter: brightness(75%);
-            cursor: pointer;
-        }
-        .container{
-            position: relative;
-            width: 500px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<!-- <div class="play">
     <div class="container">
         <img src="Pictures/WorkingInteraction.png" id="interaction">
-        <img
+        <div class="overlay">
+            <img src="Pictures/playbutton.png" class="image">
+        </div>
     </div> 
-    
+</div> -->
+<div class="info">
     <a href="https://www.hulu.com/hub/home">Hulu.com</a>
+</div>
     <p> 
-        TRIGGERS - This microinteraction is triggered by the user hovering the mouse overtop any video. 
+        TRIGGERS - This microinteraction is triggered by the user hovering the mouse overtop any video or movie. 
     </p>
     <p>
         RULES - When the user hovers over a specific show or movie, then that show or movie is able to be clicked as a link to play that show. The user can also move off of that show or movie to select a different one that will feature the same effects. The user may also click on the info tab that is available.
     </p>
     <p>
-        FEEDBACK - Once the user hovers over a movie or show, the thumbnail darkens slightly, and an arrow icon is displayed to indicated that movie is highlighted and they may select it.
+        FEEDBACK - When the user hovers over a specific show or movie, then that show or movie is able to be clicked as a link to play that show. The user can also move off of that show or movie to select a different one that will feature the same effects. The user may also click on the info tab that is available.
     </p>
     <p>
-        LOOPS AND MODES - There is no repetitive aspect to this microinteraction, however the thumbnail will remain darkened and the arrow icon will remain on screen until the user hovers off of that movie or show.
+        LOOPS AND MODES - There is no repetitive loop aspect to this microinteraction, however the thumbnail will remain darkened and the arrow icon will remain on screen until the user hovers off of that movie or show.
     </p>
-    <div>
+    <div class="play">
         <img src="Pictures/MicroInteraction1.png">
         <img src="Pictures/MicroInteraction2.png">
     </div>
+
 </body>
 
 </html>
