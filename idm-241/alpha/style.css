@@ -13,12 +13,16 @@ a{
 #interaction{
     transition: .5s;
     width: 400px;
+    stroke: white;
+    stroke-width: 20px;
+    
 }
 #interaction:hover{
     width:420px;
     transition: .5s;
     filter: brightness(75%);
     cursor: pointer;  
+    border: 15px solid #ffffff;
 }
 .container {
 position: relative;
@@ -48,12 +52,15 @@ cursor: pointer;
 }
 .container:hover .overlay {
 opacity: 1;
+border: 5px solid #ffffff;
+border-radius: 5px;
 }
 .container:hover #interaction{
     width:420px;
     transition: .5s;
     filter: brightness(55%);
     cursor: pointer;
+
 }
 .icon {
 color: white;
@@ -67,6 +74,7 @@ text-align: center;
 }
 .fa-user:hover {
 color: #eee;
+stroke: white;
 }
 .play{
 display: flex;
