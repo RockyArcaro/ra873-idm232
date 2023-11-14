@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <head>
+    <title>Beta Description</title>
     <link rel="stylesheet" href="style.css">
+    <script src="java.js"></script>
 </head>
 
 <body>
-<div class="play">
+<!-- <div class="play">
     <div class="container">
         <img src="Pictures/WorkingInteraction.png" id="interaction">
         <div class="overlay">
             <img src="Pictures/playbutton.png" class="image">
         </div>
     </div> 
-</div>
+</div>  -->
 <div class="info">
-    <a href="https://www.hulu.com/hub/home">Hulu.com</a>
+    <a href="https://www.hulu.com/hub/home" target="_blank">Hulu.com</a>
 </div>
-    <p> 
-        TRIGGERS - This microinteraction is triggered by the user hovering the mouse overtop any video or movie. 
-    </p>
-    <p>
-        RULES - When the user hovers over a specific show or movie, then that show or movie is darkened, and will have a white border around it, indicating it can be clicked. The user can also move off of that show or movie to select a different one that will feature the same effects.
-    </p>
-    <p>
-        FEEDBACK - When the user hovers over a specific show or movie, then that show or movie is darkened, and will have a white border around it, indicating it can be clicked. The user can also move off of that show or movie to select a different one that will feature the same effects.
-    </p>
-    <p>
-        LOOPS AND MODES - There is no repetitive loop aspect to this microinteraction, however the thumbnail will remain darkened and the arrow icon will remain on screen until the user hovers off of that movie or show.
-    </p>
+<div class="textcontainer">   
+    <span class="textitem"> 
+        <span> TRIGGERS </span>
+        <ul>
+            <li>Hover On (Thumbnail)</li>
+            <li>Hover Off (Thumbnail)</li>
+            <li>On Click (Play Button)</li>
+            <li>Off Click (Play Button)</li>
+            <li>On Click (Info Button)</li>
+            <li>On Hover (Dropdown Item)</li>
+            <li>Off Hover (Dropdown Item)</li>
+        </ul>
+    </span>
+    <span class="textitem"> 
+      <span>  RULES </span>
+        <ul>
+            <li>Thumbnail size increases on hover</li>
+            <li>Thumnail size shrinks off hover</li>
+            <li>Thumbnail is darkened on hover</li>
+            <li>Cursor changes to pointer on thumbnail hover, info button hover, and play button hover</li>
+            <li>Play button icon appears on hover</li>
+            <li>Play button disappears off hover</li>
+            <li>Info button appears on hover</li>
+            <li>Info button disappears off hover</li>
+            <li>Play button icon size shrinks on click</li>
+            <li>Play button icon size returns to default off click</li>
+            <li>Dropdown menu appears on info button click</li>
+            <li>Dropdown menu disappears off info button click</li>
+            <li>Dropdown menu items are highlighted a lighter shade of gray on hover</li>
+            <li>Dropdown menu items are unhighlighted off hover</li>
+        </ul>
+    </span>
+    <span class="textitem"> 
+      <div>  FEEDBACK </div>
+        <ul>
+            <li>Thumbnail size increases on hover</li>
+            <li>Thumnail size shrinks off hover</li>
+            <li>Thumbnail is darkened on hover</li>
+            <li>Cursor changes to pointer on thumbnail hover, info button hover, and play button hover</li>
+            <li>Play button icon appears on hover</li>
+            <li>Play button disappears off hover</li>
+            <li>Info button appears on hover</li>
+            <li>Info button disappears off hover</li>
+            <li>Play button icon size shrinks on click</li>
+            <li>Play button icon size returns to default off click</li>
+            <li>Dropdown menu appears on info button click</li>
+            <li>Dropdown menu disappears off info button click</li>
+            <li>Dropdown menu items are highlighted a lighter shade of gray on hover</li>
+            <li>Dropdown menu items are unhighlighted off hover</li>
+        </ul>
+    </span>
+    <span class="textitem"> 
+      <div>  LOOPS/MODES </div>
+        <ul>
+            <li>There are no repetitive loops or modes</li>
+        </ul>
+    </span>
+</div>
+
     <div class="play">
-        <img src="Pictures/MicroInteraction1.png">
-        <img src="Pictures/MicroInteraction2.png">
+        <img src="Pictures/MicroInteractionScreenshots.png">
     </div>
 
 </body>
