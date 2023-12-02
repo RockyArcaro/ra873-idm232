@@ -1,0 +1,191 @@
+body{
+    background-color: rgb(30, 30, 30);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    margin:50px;
+}
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+    border: 4px solid transparent; /* Transparent border by default */
+    border-radius: 10px;
+  }
+
+  .image-container:hover{
+    transform: translate(0, 0) scale(1.1);
+    transition: .3s;
+    border-color: white; /* Change the border color on hover */
+    border-radius: 10px;
+  }
+  
+  .overlay-image {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .play-button {
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    transform: translate(-50%, -50%);
+    transition: transform .3s;
+    
+  }
+  
+  .play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .info-button {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    transition: .3s;
+
+  }
+  
+  .image-container:hover .overlay-image {
+    opacity: 1;
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  
+
+
+  .info-button:hover {
+    transform: translate(0, 0) scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+  }
+
+  .overlay-image.clicked {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: .3s;
+
+  }
+  
+  .dropdown-content button {
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    font-size: 20px;
+    color:white;
+    background-color: transparent;
+    background-color: rgb(32, 32, 32);
+  }
+  
+  .dropdown-content button:hover {
+    background-color: rgb(21, 21, 21);
+    color:white;
+    transition: .2s;
+  }
+
+ /* Overlay styles */
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 999; /* Above other content but below modal */
+  pointer-events: none; /* Disable pointer events by default */
+}
+
+/* Your existing modal styles */
+.dropdown-content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  width: 220px;
+  position: absolute;
+  top: 50px;
+  left: calc(100%);
+  z-index: 1000;
+  display: none;
+}
+
+.dropdown-content.show {
+  display: block;
+  transition: .6s;
+  opacity: 1;
+}
+
+/* Enable pointer events when the modal is visible */
+.dropdown-content.show + #overlay {
+  display: block;
+  pointer-events: auto; /* Allow pointer events */
+}
+
+
+  .overlay-image.play-button.clicked {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  .overlay-image.play-button {
+    cursor: pointer !important;
+  }
+
+  .button-icon {
+    width: 25px; /* Adjust icon width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon vertically */
+  }
+
+  li{
+      color:white;
+      font-size: 24px;
+  }
+
+  h1{
+      color:white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size:32px;
+  }
+
+  h2{
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin:0px;
+}
+
+
+  .tile{
+      margin:40px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width:500px;
+      background-color: rgb(65, 65, 65);
+      padding: 10px;
+      border-radius: 5px;
+  }
+  
+  .TextContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    flex-wrap: wrap;
+  }
+
+  .main-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  .topRow{
+    height:550px;
+  }
